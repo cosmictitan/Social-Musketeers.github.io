@@ -1,12 +1,12 @@
 <template>
     <div class="social-header">
         <img src="~/assets/images/logo.png" href="/" class="logo" />
-        <nav>
+        <!-- <nav>
             <nuxt-link to="/about" class="underline">About</nuxt-link>
             <nuxt-link to="/services" class="underline">Services</nuxt-link>
             <nuxt-link to="/blog" class="underline">Blog</nuxt-link>
             <nuxt-link to="/contact" class="underline">Contact</nuxt-link>
-        </nav>
+        </nav> -->
     </div>
 </template>
   
@@ -40,7 +40,7 @@ export default {
   
 <style>
 header {
-    background-color: white;
+    /* background-color: #000; */
     position: fixed;
     top: 0;
     left: 0;
@@ -60,8 +60,8 @@ header {
 }
 
 .logo {
-    width: 10%;
-    height: 10%;
+    width: 20%;
+    height: 20%;
     background-color: #333;
     transition: 0.3s ease-in-out;
 }
