@@ -1,6 +1,6 @@
 <template>
+    <img src="~/assets/images/logo.png" href="/" class="logo" />
     <div class="social-header">
-        <img src="~/assets/images/logo.png" href="/" class="logo" />
         <!-- <nav>
             <nuxt-link to="/about" class="underline">About</nuxt-link>
             <nuxt-link to="/services" class="underline">Services</nuxt-link>
@@ -61,7 +61,7 @@ header {
 
 .logo {
     width: 20%;
-    height: 20%;
+    /* height: 20%; */
     background-color: #333;
     transition: 0.3s ease-in-out;
 }
@@ -101,5 +101,12 @@ nav a:hover {
 .underline:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media (max-width: 420px) {
+    .logo {
+        width: 35%;
+    }
+
 }
 </style>
