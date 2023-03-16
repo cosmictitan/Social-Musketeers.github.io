@@ -1,9 +1,12 @@
 <template>
   <div>
-    <header>
+    <header class="index">
       <Header></Header>
     </header>
-    <Banner />
+    <NuxtLayout >
+      <NuxtPage />
+    </NuxtLayout>
+
     <!-- <client-only>
       <Vue3Lottie class="mafia"
         animationLink="https://raw.githubusercontent.com/Social-Musketeers/Social-Musketeers.github.io/main/assets/lottie/landing.json"
@@ -21,6 +24,9 @@ import axios from 'axios'
 export default {
   meta: [
     { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" }
+  ],
+  css: [
+    '~/assets/style.css',
   ],
   data() {
     return {
@@ -44,57 +50,4 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
-:root {
-  --minViewportSize: 320;
-  --maxViewportSize: 1920;
-}
-
-* {
-  font-family: 'Questrial', sans-serif;
-}
-
-html {
-  background-color: #FAF4E8;
-}
-
-body {
-  margin: auto;
-  align-content: center;
-  height: max-content;
-  width: max-content;
-  padding-bottom: 100px;
-}
-
-span {
-  color: #FF9900;
-}
-
-h1 {
-  color: antiquewhite;
-  text-align: center;
-  width: 150vh;
-  font-weight: 300;
-  word-wrap: break-word;
-  white-space: normal;
-}
-
-@media (max-width: 420px) {
-  body {
-    padding-top: 70px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  h1 {
-    font-size: 1.2em;
-    width: 50vh;
-  }
-
-  span {
-    color: #FF9900;
-  }
-}
-</style>
+<style src="@/assets/style.css"></style>
