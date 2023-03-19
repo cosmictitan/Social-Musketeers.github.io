@@ -1,0 +1,147 @@
+@media(min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    font-family: 'Questrial', sans-serif;
+}
+/* 
+.sticky {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.sticky-1 {
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+    display: inline-block;
+}
+ */
+.narbar {
+    padding-top: 1px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link .main-color {
+    color: #126656;
+}
+
+h1 {
+    color: #126656;
+    font-size: 5.5vw;
+}
+
+h2 {
+    color: #126656;
+    font-size: 4vw;
+}
+
+p {
+    color: #126656;
+    font-size: 1.5rem;
+}
+
+.outline {
+    outline: auto;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: -5px;
+}
+
+.btn-success {
+    background-color: #126656;
+}
+
+.margin-color {
+    background-color: #cadce6;
+    outline-color: #cadce6;
+}
+
+.color-2 {
+    background-color: #b9dbcb;
+}
+
+.color-1 {
+    background-color: #f8f2e5;
+}
+
+.color-3 {
+    background-color: #cadce6;
+}
+
+/* Transition reveal */
+
+.my-animation {
+    animation: my-animation-keyframes 1s ease-in-out forwards;
+}
+
+@keyframes my-animation-keyframes {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Transition reveal end */
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0 8 0 8;
+    border-radius: 30px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .1s ease;
+    background-color: transparent;
+    color: #126656;
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+h3{
+    color: #B6743E;
+}
+
+
+
+.radius{
+    border-radius: 50px;
+}
+
+h4{
+    color:#126656;
+    font-size: 1.75rem;
+}
